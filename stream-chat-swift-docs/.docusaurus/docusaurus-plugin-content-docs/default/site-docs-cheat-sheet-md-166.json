@@ -1,0 +1,12 @@
+{
+  "unversionedId": "cheat-sheet",
+  "id": "cheat-sheet",
+  "isDocsHomePage": false,
+  "title": "StreamChat Cheat Sheet",
+  "description": "This cheat sheet provides additional information to the official StreamChat SDK documentation on our website. You can find here more detailed information, richer code snippets, and commentary to the provided solutions.",
+  "source": "@site/docs/cheat-sheet.md",
+  "slug": "/cheat-sheet",
+  "permalink": "/stream-chat-swift/cheat-sheet",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/cheat-sheet.md",
+  "version": "current"
+}

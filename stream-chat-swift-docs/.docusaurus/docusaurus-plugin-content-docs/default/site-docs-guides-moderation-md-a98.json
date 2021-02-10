@@ -1,0 +1,20 @@
+{
+  "unversionedId": "guides/moderation",
+  "id": "guides/moderation",
+  "isDocsHomePage": false,
+  "title": "Moderation",
+  "source": "@site/docs/guides/moderation.md",
+  "slug": "/guides/moderation",
+  "permalink": "/stream-chat-swift/guides/moderation",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/moderation.md",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Customizing UI Components",
+    "permalink": "/stream-chat-swift/guides/ui-customization"
+  },
+  "next": {
+    "title": "Filter & Query Guide",
+    "permalink": "/stream-chat-swift/guides/filter-query-guide"
+  }
+}

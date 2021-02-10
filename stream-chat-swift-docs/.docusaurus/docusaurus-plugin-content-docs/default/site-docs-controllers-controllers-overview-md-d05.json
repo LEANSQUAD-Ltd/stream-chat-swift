@@ -1,0 +1,21 @@
+{
+  "unversionedId": "controllers/controllers-overview",
+  "id": "controllers/controllers-overview",
+  "isDocsHomePage": false,
+  "title": "Controllers Overview",
+  "description": "This page contains a list of all available controllers within StreamChat, including their short description and typical use-cases.",
+  "source": "@site/docs/controllers/controllers-overview.md",
+  "slug": "/controllers/controllers-overview",
+  "permalink": "/stream-chat-swift/controllers/controllers-overview",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/controllers/controllers-overview.md",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "attachments-migration",
+    "permalink": "/stream-chat-swift/guides/attachments-migration"
+  },
+  "next": {
+    "title": "UI Components Overview",
+    "permalink": "/stream-chat-swift/ui-components/ui-components-overview"
+  }
+}

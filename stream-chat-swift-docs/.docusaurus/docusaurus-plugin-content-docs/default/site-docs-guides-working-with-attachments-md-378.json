@@ -1,0 +1,20 @@
+{
+  "unversionedId": "guides/working-with-attachments",
+  "id": "guides/working-with-attachments",
+  "isDocsHomePage": false,
+  "title": "Working with Attachments/Files",
+  "source": "@site/docs/guides/working-with-attachments.md",
+  "slug": "/guides/working-with-attachments",
+  "permalink": "/stream-chat-swift/guides/working-with-attachments",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/working-with-attachments.md",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Pinned Messages",
+    "permalink": "/stream-chat-swift/guides/pinned-messages"
+  },
+  "next": {
+    "title": "Working with Reactions",
+    "permalink": "/stream-chat-swift/guides/working-with-reactions"
+  }
+}

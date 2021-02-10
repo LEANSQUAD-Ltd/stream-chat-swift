@@ -1,0 +1,21 @@
+{
+  "unversionedId": "guides/attachments-migration",
+  "id": "guides/attachments-migration",
+  "isDocsHomePage": false,
+  "title": "attachments-migration",
+  "description": "Attachments v4.x migration",
+  "source": "@site/docs/guides/attachments-migration.md",
+  "slug": "/guides/attachments-migration",
+  "permalink": "/stream-chat-swift/guides/attachments-migration",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/attachments-migration.md",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Debugging",
+    "permalink": "/stream-chat-swift/guides/debugging"
+  },
+  "next": {
+    "title": "Controllers Overview",
+    "permalink": "/stream-chat-swift/controllers/controllers-overview"
+  }
+}

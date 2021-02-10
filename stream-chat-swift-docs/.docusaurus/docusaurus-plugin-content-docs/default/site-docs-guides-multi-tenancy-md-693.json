@@ -1,0 +1,20 @@
+{
+  "unversionedId": "guides/multi-tenancy",
+  "id": "guides/multi-tenancy",
+  "isDocsHomePage": false,
+  "title": "Multi-Tenancy & Teams",
+  "source": "@site/docs/guides/multi-tenancy.md",
+  "slug": "/guides/multi-tenancy",
+  "permalink": "/stream-chat-swift/guides/multi-tenancy",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/multi-tenancy.md",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Filter & Query Guide",
+    "permalink": "/stream-chat-swift/guides/filter-query-guide"
+  },
+  "next": {
+    "title": "Debugging",
+    "permalink": "/stream-chat-swift/guides/debugging"
+  }
+}

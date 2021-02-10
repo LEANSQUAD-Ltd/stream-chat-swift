@@ -1,0 +1,20 @@
+{
+  "unversionedId": "guides/getting-started",
+  "id": "guides/getting-started",
+  "isDocsHomePage": false,
+  "title": "Getting Started",
+  "source": "@site/docs/guides/getting-started.md",
+  "slug": "/guides/getting-started",
+  "permalink": "/stream-chat-swift/guides/getting-started",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/getting-started.md",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Integration",
+    "permalink": "/stream-chat-swift/guides/integration"
+  },
+  "next": {
+    "title": "Working with Channel List",
+    "permalink": "/stream-chat-swift/guides/working-with-channel-list"
+  }
+}

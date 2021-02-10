@@ -1,0 +1,20 @@
+{
+  "unversionedId": "guides/working-with-watchers",
+  "id": "guides/working-with-watchers",
+  "isDocsHomePage": false,
+  "title": "Working with Watchers",
+  "source": "@site/docs/guides/working-with-watchers.md",
+  "slug": "/guides/working-with-watchers",
+  "permalink": "/stream-chat-swift/guides/working-with-watchers",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/working-with-watchers.md",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Working with Members",
+    "permalink": "/stream-chat-swift/guides/working-with-members"
+  },
+  "next": {
+    "title": "Events",
+    "permalink": "/stream-chat-swift/guides/events"
+  }
+}

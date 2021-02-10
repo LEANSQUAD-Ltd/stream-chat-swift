@@ -1,0 +1,917 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/stream-chat-swift/",
+          "versionEditUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs",
+          "versionEditUrlLocalized": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/dmigach/Desktop/stream-chat-swift/stream-chat-swift-docs/sidebars.js",
+          "contentPath": "/Users/dmigach/Desktop/stream-chat-swift/stream-chat-swift-docs/docs",
+          "contentPathLocalized": "/Users/dmigach/Desktop/stream-chat-swift/stream-chat-swift-docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "mainDocId": "home",
+          "sidebars": {
+            "docs": [
+              {
+                "type": "doc",
+                "id": "home"
+              },
+              {
+                "type": "doc",
+                "id": "introduction"
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Guides",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "guides/integration"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/getting-started"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/working-with-channel-list"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/working-with-a-channel"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/working-with-messages"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/working-with-user"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/pinned-messages"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/working-with-attachments"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/working-with-reactions"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/working-with-members"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/working-with-watchers"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/events"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/push-notifications"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/connection-status"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/ui-customization"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/moderation"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/filter-query-guide"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/multi-tenancy"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/debugging"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "guides/attachments-migration"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "StreamChat Controllers",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "controllers/controllers-overview"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "UI Components",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "ui-components/ui-components-overview"
+                  }
+                ]
+              },
+              {
+                "type": "doc",
+                "id": "migrating-from-1.x-and-2.x"
+              },
+              {
+                "type": "doc",
+                "id": "faq"
+              },
+              {
+                "type": "doc",
+                "id": "glossary"
+              }
+            ]
+          },
+          "permalinkToSidebar": {
+            "/stream-chat-swift/controllers/controllers-overview": "docs",
+            "/stream-chat-swift/faq": "docs",
+            "/stream-chat-swift/glossary": "docs",
+            "/stream-chat-swift/guides/attachments-migration": "docs",
+            "/stream-chat-swift/guides/connection-status": "docs",
+            "/stream-chat-swift/guides/debugging": "docs",
+            "/stream-chat-swift/guides/events": "docs",
+            "/stream-chat-swift/guides/filter-query-guide": "docs",
+            "/stream-chat-swift/guides/getting-started": "docs",
+            "/stream-chat-swift/guides/integration": "docs",
+            "/stream-chat-swift/guides/moderation": "docs",
+            "/stream-chat-swift/guides/multi-tenancy": "docs",
+            "/stream-chat-swift/guides/pinned-messages": "docs",
+            "/stream-chat-swift/guides/push-notifications": "docs",
+            "/stream-chat-swift/guides/ui-customization": "docs",
+            "/stream-chat-swift/guides/working-with-a-channel": "docs",
+            "/stream-chat-swift/guides/working-with-attachments": "docs",
+            "/stream-chat-swift/guides/working-with-channel-list": "docs",
+            "/stream-chat-swift/guides/working-with-members": "docs",
+            "/stream-chat-swift/guides/working-with-messages": "docs",
+            "/stream-chat-swift/guides/working-with-reactions": "docs",
+            "/stream-chat-swift/guides/working-with-user": "docs",
+            "/stream-chat-swift/guides/working-with-watchers": "docs",
+            "/stream-chat-swift/": "docs",
+            "/stream-chat-swift/introduction": "docs",
+            "/stream-chat-swift/migrating-from-1.x-and-2.x": "docs",
+            "/stream-chat-swift/ui-components/ui-components-overview": "docs"
+          },
+          "docs": [
+            {
+              "unversionedId": "cheat-sheet",
+              "id": "cheat-sheet",
+              "isDocsHomePage": false,
+              "title": "StreamChat Cheat Sheet",
+              "description": "This cheat sheet provides additional information to the official StreamChat SDK documentation on our website. You can find here more detailed information, richer code snippets, and commentary to the provided solutions.",
+              "source": "@site/docs/cheat-sheet.md",
+              "slug": "/cheat-sheet",
+              "permalink": "/stream-chat-swift/cheat-sheet",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/cheat-sheet.md",
+              "version": "current"
+            },
+            {
+              "unversionedId": "controllers/controllers-overview",
+              "id": "controllers/controllers-overview",
+              "isDocsHomePage": false,
+              "title": "Controllers Overview",
+              "description": "This page contains a list of all available controllers within StreamChat, including their short description and typical use-cases.",
+              "source": "@site/docs/controllers/controllers-overview.md",
+              "slug": "/controllers/controllers-overview",
+              "permalink": "/stream-chat-swift/controllers/controllers-overview",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/controllers/controllers-overview.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "attachments-migration",
+                "permalink": "/stream-chat-swift/guides/attachments-migration"
+              },
+              "next": {
+                "title": "UI Components Overview",
+                "permalink": "/stream-chat-swift/ui-components/ui-components-overview"
+              }
+            },
+            {
+              "unversionedId": "faq",
+              "id": "faq",
+              "isDocsHomePage": false,
+              "title": "Frequenty Asked Questions",
+              "source": "@site/docs/faq.md",
+              "slug": "/faq",
+              "permalink": "/stream-chat-swift/faq",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/faq.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Migrating from 1.x and 2.x",
+                "permalink": "/stream-chat-swift/migrating-from-1.x-and-2.x"
+              },
+              "next": {
+                "title": "Glossary",
+                "permalink": "/stream-chat-swift/glossary"
+              }
+            },
+            {
+              "unversionedId": "glossary",
+              "id": "glossary",
+              "isDocsHomePage": false,
+              "title": "Glossary",
+              "description": "A list of names and terms used in the framework and documentation.",
+              "source": "@site/docs/glossary.md",
+              "slug": "/glossary",
+              "permalink": "/stream-chat-swift/glossary",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/glossary.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Frequenty Asked Questions",
+                "permalink": "/stream-chat-swift/faq"
+              }
+            },
+            {
+              "unversionedId": "guides/attachments-migration",
+              "id": "guides/attachments-migration",
+              "isDocsHomePage": false,
+              "title": "attachments-migration",
+              "description": "Attachments v4.x migration",
+              "source": "@site/docs/guides/attachments-migration.md",
+              "slug": "/guides/attachments-migration",
+              "permalink": "/stream-chat-swift/guides/attachments-migration",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/attachments-migration.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Debugging",
+                "permalink": "/stream-chat-swift/guides/debugging"
+              },
+              "next": {
+                "title": "Controllers Overview",
+                "permalink": "/stream-chat-swift/controllers/controllers-overview"
+              }
+            },
+            {
+              "unversionedId": "guides/connection-status",
+              "id": "guides/connection-status",
+              "isDocsHomePage": false,
+              "title": "Connection Status",
+              "source": "@site/docs/guides/connection-status.md",
+              "slug": "/guides/connection-status",
+              "permalink": "/stream-chat-swift/guides/connection-status",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/connection-status.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Push Notifications",
+                "permalink": "/stream-chat-swift/guides/push-notifications"
+              },
+              "next": {
+                "title": "Customizing UI Components",
+                "permalink": "/stream-chat-swift/guides/ui-customization"
+              }
+            },
+            {
+              "unversionedId": "guides/debugging",
+              "id": "guides/debugging",
+              "isDocsHomePage": false,
+              "title": "Debugging",
+              "source": "@site/docs/guides/debugging.md",
+              "slug": "/guides/debugging",
+              "permalink": "/stream-chat-swift/guides/debugging",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/debugging.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Multi-Tenancy & Teams",
+                "permalink": "/stream-chat-swift/guides/multi-tenancy"
+              },
+              "next": {
+                "title": "attachments-migration",
+                "permalink": "/stream-chat-swift/guides/attachments-migration"
+              }
+            },
+            {
+              "unversionedId": "guides/events",
+              "id": "guides/events",
+              "isDocsHomePage": false,
+              "title": "Events",
+              "source": "@site/docs/guides/events.md",
+              "slug": "/guides/events",
+              "permalink": "/stream-chat-swift/guides/events",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/events.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Working with Watchers",
+                "permalink": "/stream-chat-swift/guides/working-with-watchers"
+              },
+              "next": {
+                "title": "Push Notifications",
+                "permalink": "/stream-chat-swift/guides/push-notifications"
+              }
+            },
+            {
+              "unversionedId": "guides/filter-query-guide",
+              "id": "guides/filter-query-guide",
+              "isDocsHomePage": false,
+              "title": "Filter & Query Guide",
+              "source": "@site/docs/guides/filter-query-guide.md",
+              "slug": "/guides/filter-query-guide",
+              "permalink": "/stream-chat-swift/guides/filter-query-guide",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/filter-query-guide.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Moderation",
+                "permalink": "/stream-chat-swift/guides/moderation"
+              },
+              "next": {
+                "title": "Multi-Tenancy & Teams",
+                "permalink": "/stream-chat-swift/guides/multi-tenancy"
+              }
+            },
+            {
+              "unversionedId": "guides/getting-started",
+              "id": "guides/getting-started",
+              "isDocsHomePage": false,
+              "title": "Getting Started",
+              "source": "@site/docs/guides/getting-started.md",
+              "slug": "/guides/getting-started",
+              "permalink": "/stream-chat-swift/guides/getting-started",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/getting-started.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Integration",
+                "permalink": "/stream-chat-swift/guides/integration"
+              },
+              "next": {
+                "title": "Working with Channel List",
+                "permalink": "/stream-chat-swift/guides/working-with-channel-list"
+              }
+            },
+            {
+              "unversionedId": "guides/integration",
+              "id": "guides/integration",
+              "isDocsHomePage": false,
+              "title": "Integration",
+              "description": "Cocoapods",
+              "source": "@site/docs/guides/integration.md",
+              "slug": "/guides/integration",
+              "permalink": "/stream-chat-swift/guides/integration",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/integration.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/stream-chat-swift/introduction"
+              },
+              "next": {
+                "title": "Getting Started",
+                "permalink": "/stream-chat-swift/guides/getting-started"
+              }
+            },
+            {
+              "unversionedId": "guides/moderation",
+              "id": "guides/moderation",
+              "isDocsHomePage": false,
+              "title": "Moderation",
+              "source": "@site/docs/guides/moderation.md",
+              "slug": "/guides/moderation",
+              "permalink": "/stream-chat-swift/guides/moderation",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/moderation.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Customizing UI Components",
+                "permalink": "/stream-chat-swift/guides/ui-customization"
+              },
+              "next": {
+                "title": "Filter & Query Guide",
+                "permalink": "/stream-chat-swift/guides/filter-query-guide"
+              }
+            },
+            {
+              "unversionedId": "guides/multi-tenancy",
+              "id": "guides/multi-tenancy",
+              "isDocsHomePage": false,
+              "title": "Multi-Tenancy & Teams",
+              "source": "@site/docs/guides/multi-tenancy.md",
+              "slug": "/guides/multi-tenancy",
+              "permalink": "/stream-chat-swift/guides/multi-tenancy",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/multi-tenancy.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Filter & Query Guide",
+                "permalink": "/stream-chat-swift/guides/filter-query-guide"
+              },
+              "next": {
+                "title": "Debugging",
+                "permalink": "/stream-chat-swift/guides/debugging"
+              }
+            },
+            {
+              "unversionedId": "guides/pinned-messages",
+              "id": "guides/pinned-messages",
+              "isDocsHomePage": false,
+              "title": "Pinned Messages",
+              "source": "@site/docs/guides/pinned-messages.md",
+              "slug": "/guides/pinned-messages",
+              "permalink": "/stream-chat-swift/guides/pinned-messages",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/pinned-messages.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Working with User",
+                "permalink": "/stream-chat-swift/guides/working-with-user"
+              },
+              "next": {
+                "title": "Working with Attachments/Files",
+                "permalink": "/stream-chat-swift/guides/working-with-attachments"
+              }
+            },
+            {
+              "unversionedId": "guides/push-notifications",
+              "id": "guides/push-notifications",
+              "isDocsHomePage": false,
+              "title": "Push Notifications",
+              "source": "@site/docs/guides/push-notifications.md",
+              "slug": "/guides/push-notifications",
+              "permalink": "/stream-chat-swift/guides/push-notifications",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/push-notifications.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Events",
+                "permalink": "/stream-chat-swift/guides/events"
+              },
+              "next": {
+                "title": "Connection Status",
+                "permalink": "/stream-chat-swift/guides/connection-status"
+              }
+            },
+            {
+              "unversionedId": "guides/ui-customization",
+              "id": "guides/ui-customization",
+              "isDocsHomePage": false,
+              "title": "Customizing UI Components",
+              "description": "Basic Customization",
+              "source": "@site/docs/guides/ui-customization.md",
+              "slug": "/guides/ui-customization",
+              "permalink": "/stream-chat-swift/guides/ui-customization",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/ui-customization.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Connection Status",
+                "permalink": "/stream-chat-swift/guides/connection-status"
+              },
+              "next": {
+                "title": "Moderation",
+                "permalink": "/stream-chat-swift/guides/moderation"
+              }
+            },
+            {
+              "unversionedId": "guides/working-with-a-channel",
+              "id": "guides/working-with-a-channel",
+              "isDocsHomePage": false,
+              "title": "Working with a Channel",
+              "description": "Getting Channel Data",
+              "source": "@site/docs/guides/working-with-a-channel.md",
+              "slug": "/guides/working-with-a-channel",
+              "permalink": "/stream-chat-swift/guides/working-with-a-channel",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/working-with-a-channel.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Working with Channel List",
+                "permalink": "/stream-chat-swift/guides/working-with-channel-list"
+              },
+              "next": {
+                "title": "Working with Messages",
+                "permalink": "/stream-chat-swift/guides/working-with-messages"
+              }
+            },
+            {
+              "unversionedId": "guides/working-with-attachments",
+              "id": "guides/working-with-attachments",
+              "isDocsHomePage": false,
+              "title": "Working with Attachments/Files",
+              "source": "@site/docs/guides/working-with-attachments.md",
+              "slug": "/guides/working-with-attachments",
+              "permalink": "/stream-chat-swift/guides/working-with-attachments",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/working-with-attachments.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Pinned Messages",
+                "permalink": "/stream-chat-swift/guides/pinned-messages"
+              },
+              "next": {
+                "title": "Working with Reactions",
+                "permalink": "/stream-chat-swift/guides/working-with-reactions"
+              }
+            },
+            {
+              "unversionedId": "guides/working-with-channel-list",
+              "id": "guides/working-with-channel-list",
+              "isDocsHomePage": false,
+              "title": "Working with Channel List",
+              "description": "Understanding ChannelListQuery",
+              "source": "@site/docs/guides/working-with-channel-list.md",
+              "slug": "/guides/working-with-channel-list",
+              "permalink": "/stream-chat-swift/guides/working-with-channel-list",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/working-with-channel-list.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Getting Started",
+                "permalink": "/stream-chat-swift/guides/getting-started"
+              },
+              "next": {
+                "title": "Working with a Channel",
+                "permalink": "/stream-chat-swift/guides/working-with-a-channel"
+              }
+            },
+            {
+              "unversionedId": "guides/working-with-members",
+              "id": "guides/working-with-members",
+              "isDocsHomePage": false,
+              "title": "Working with Members",
+              "description": "Users that are in a particular channel are members of this channel. Membership allows handling such things as roles, invitations and bans.",
+              "source": "@site/docs/guides/working-with-members.md",
+              "slug": "/guides/working-with-members",
+              "permalink": "/stream-chat-swift/guides/working-with-members",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/working-with-members.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Working with Reactions",
+                "permalink": "/stream-chat-swift/guides/working-with-reactions"
+              },
+              "next": {
+                "title": "Working with Watchers",
+                "permalink": "/stream-chat-swift/guides/working-with-watchers"
+              }
+            },
+            {
+              "unversionedId": "guides/working-with-messages",
+              "id": "guides/working-with-messages",
+              "isDocsHomePage": false,
+              "title": "Working with Messages",
+              "description": "Message object",
+              "source": "@site/docs/guides/working-with-messages.md",
+              "slug": "/guides/working-with-messages",
+              "permalink": "/stream-chat-swift/guides/working-with-messages",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/working-with-messages.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Working with a Channel",
+                "permalink": "/stream-chat-swift/guides/working-with-a-channel"
+              },
+              "next": {
+                "title": "Working with User",
+                "permalink": "/stream-chat-swift/guides/working-with-user"
+              }
+            },
+            {
+              "unversionedId": "guides/working-with-reactions",
+              "id": "guides/working-with-reactions",
+              "isDocsHomePage": false,
+              "title": "Working with Reactions",
+              "source": "@site/docs/guides/working-with-reactions.md",
+              "slug": "/guides/working-with-reactions",
+              "permalink": "/stream-chat-swift/guides/working-with-reactions",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/working-with-reactions.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Working with Attachments/Files",
+                "permalink": "/stream-chat-swift/guides/working-with-attachments"
+              },
+              "next": {
+                "title": "Working with Members",
+                "permalink": "/stream-chat-swift/guides/working-with-members"
+              }
+            },
+            {
+              "unversionedId": "guides/working-with-user",
+              "id": "guides/working-with-user",
+              "isDocsHomePage": false,
+              "title": "Working with User",
+              "source": "@site/docs/guides/working-with-user.md",
+              "slug": "/guides/working-with-user",
+              "permalink": "/stream-chat-swift/guides/working-with-user",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/working-with-user.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Working with Messages",
+                "permalink": "/stream-chat-swift/guides/working-with-messages"
+              },
+              "next": {
+                "title": "Pinned Messages",
+                "permalink": "/stream-chat-swift/guides/pinned-messages"
+              }
+            },
+            {
+              "unversionedId": "guides/working-with-watchers",
+              "id": "guides/working-with-watchers",
+              "isDocsHomePage": false,
+              "title": "Working with Watchers",
+              "source": "@site/docs/guides/working-with-watchers.md",
+              "slug": "/guides/working-with-watchers",
+              "permalink": "/stream-chat-swift/guides/working-with-watchers",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/working-with-watchers.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Working with Members",
+                "permalink": "/stream-chat-swift/guides/working-with-members"
+              },
+              "next": {
+                "title": "Events",
+                "permalink": "/stream-chat-swift/guides/events"
+              }
+            },
+            {
+              "unversionedId": "home",
+              "id": "home",
+              "isDocsHomePage": false,
+              "title": "Home",
+              "description": "💡 Introduction",
+              "source": "@site/docs/home.md",
+              "slug": "/",
+              "permalink": "/stream-chat-swift/",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/home.md",
+              "version": "current",
+              "sidebar": "docs",
+              "next": {
+                "title": "Introduction",
+                "permalink": "/stream-chat-swift/introduction"
+              }
+            },
+            {
+              "unversionedId": "introduction",
+              "id": "introduction",
+              "isDocsHomePage": false,
+              "title": "Introduction",
+              "description": "You don't have time and you want to start using StreamChat Swift SDKs ASAP?",
+              "source": "@site/docs/introduction.md",
+              "slug": "/introduction",
+              "permalink": "/stream-chat-swift/introduction",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/introduction.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Home",
+                "permalink": "/stream-chat-swift/"
+              },
+              "next": {
+                "title": "Integration",
+                "permalink": "/stream-chat-swift/guides/integration"
+              }
+            },
+            {
+              "unversionedId": "migrating-from-1.x-and-2.x",
+              "id": "migrating-from-1.x-and-2.x",
+              "isDocsHomePage": false,
+              "title": "Migrating from 1.x and 2.x",
+              "description": "StreamChat SDKs were re-written for the ground up for v3. Unfortunately that means there isn't a clear, straightforward way to migrate. We suggest reading up on documentation and sample projects to get familiar with the SDK so that you can re-create the functionality with the new SDKs.",
+              "source": "@site/docs/migrating-from-1.x-and-2.x.md",
+              "slug": "/migrating-from-1.x-and-2.x",
+              "permalink": "/stream-chat-swift/migrating-from-1.x-and-2.x",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/migrating-from-1.x-and-2.x.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "UI Components Overview",
+                "permalink": "/stream-chat-swift/ui-components/ui-components-overview"
+              },
+              "next": {
+                "title": "Frequenty Asked Questions",
+                "permalink": "/stream-chat-swift/faq"
+              }
+            },
+            {
+              "unversionedId": "ui-cheat-sheet",
+              "id": "ui-cheat-sheet",
+              "isDocsHomePage": false,
+              "title": "StreamChatUI Cheat Sheet",
+              "description": "This cheat sheet provides additional information on how to use StreamChatUI SDK. It offers rich code snippets, detailed explanations, and commentary on the provided solutions.",
+              "source": "@site/docs/ui-cheat-sheet.md",
+              "slug": "/ui-cheat-sheet",
+              "permalink": "/stream-chat-swift/ui-cheat-sheet",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/ui-cheat-sheet.md",
+              "version": "current"
+            },
+            {
+              "unversionedId": "ui-components/ui-components-overview",
+              "id": "ui-components/ui-components-overview",
+              "isDocsHomePage": false,
+              "title": "UI Components Overview",
+              "source": "@site/docs/ui-components/ui-components-overview.md",
+              "slug": "/ui-components/ui-components-overview",
+              "permalink": "/stream-chat-swift/ui-components/ui-components-overview",
+              "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/ui-components/ui-components-overview.md",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Controllers Overview",
+                "permalink": "/stream-chat-swift/controllers/controllers-overview"
+              },
+              "next": {
+                "title": "Migrating from 1.x and 2.x",
+                "permalink": "/stream-chat-swift/migrating-from-1.x-and-2.x"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogPosts": [
+        {
+          "id": "welcome",
+          "metadata": {
+            "permalink": "/stream-chat-swift/blog/welcome",
+            "source": "@site/blog/2019-05-30-welcome.md",
+            "description": "Blog features are powered by the blog plugin. Simply add files to the blog directory. It supports tags as well!",
+            "date": "2019-05-30T00:00:00.000Z",
+            "formattedDate": "May 30, 2019",
+            "tags": [
+              {
+                "label": "facebook",
+                "permalink": "/stream-chat-swift/blog/tags/facebook"
+              },
+              {
+                "label": "hello",
+                "permalink": "/stream-chat-swift/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/stream-chat-swift/blog/tags/docusaurus"
+              }
+            ],
+            "title": "Welcome",
+            "readingTime": 0.175,
+            "truncated": false,
+            "nextItem": {
+              "title": "Hello",
+              "permalink": "/stream-chat-swift/blog/hello-world"
+            }
+          }
+        },
+        {
+          "id": "hello-world",
+          "metadata": {
+            "permalink": "/stream-chat-swift/blog/hello-world",
+            "source": "@site/blog/2019-05-29-hello-world.md",
+            "description": "Welcome to this blog. This blog is created with Docusaurus 2 alpha.",
+            "date": "2019-05-29T00:00:00.000Z",
+            "formattedDate": "May 29, 2019",
+            "tags": [
+              {
+                "label": "hello",
+                "permalink": "/stream-chat-swift/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/stream-chat-swift/blog/tags/docusaurus"
+              }
+            ],
+            "title": "Hello",
+            "readingTime": 0.12,
+            "truncated": true,
+            "prevItem": {
+              "title": "Welcome",
+              "permalink": "/stream-chat-swift/blog/welcome"
+            },
+            "nextItem": {
+              "title": "Hola",
+              "permalink": "/stream-chat-swift/blog/hola"
+            }
+          }
+        },
+        {
+          "id": "hola",
+          "metadata": {
+            "permalink": "/stream-chat-swift/blog/hola",
+            "source": "@site/blog/2019-05-28-hola.md",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+            "date": "2019-05-28T00:00:00.000Z",
+            "formattedDate": "May 28, 2019",
+            "tags": [
+              {
+                "label": "hola",
+                "permalink": "/stream-chat-swift/blog/tags/hola"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/stream-chat-swift/blog/tags/docusaurus"
+              }
+            ],
+            "title": "Hola",
+            "readingTime": 0.12,
+            "truncated": false,
+            "prevItem": {
+              "title": "Hello",
+              "permalink": "/stream-chat-swift/blog/hello-world"
+            }
+          }
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "metadata": {
+            "permalink": "/stream-chat-swift/blog",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 3,
+            "previousPage": null,
+            "nextPage": null,
+            "blogDescription": "Blog",
+            "blogTitle": "Blog"
+          },
+          "items": [
+            "welcome",
+            "hello-world",
+            "hola"
+          ]
+        }
+      ],
+      "blogTags": {
+        "facebook": {
+          "name": "facebook",
+          "items": [
+            "welcome"
+          ],
+          "permalink": "/stream-chat-swift/blog/tags/facebook"
+        },
+        "hello": {
+          "name": "hello",
+          "items": [
+            "welcome",
+            "hello-world"
+          ],
+          "permalink": "/stream-chat-swift/blog/tags/hello"
+        },
+        "docusaurus": {
+          "name": "docusaurus",
+          "items": [
+            "welcome",
+            "hello-world",
+            "hola"
+          ],
+          "permalink": "/stream-chat-swift/blog/tags/docusaurus"
+        },
+        "hola": {
+          "name": "hola",
+          "items": [
+            "hola"
+          ],
+          "permalink": "/stream-chat-swift/blog/tags/hola"
+        }
+      },
+      "blogTagsListPath": "/stream-chat-swift/blog/tags"
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "mdx",
+        "permalink": "/stream-chat-swift/markdown-page",
+        "source": "@site/src/pages/markdown-page.md"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}

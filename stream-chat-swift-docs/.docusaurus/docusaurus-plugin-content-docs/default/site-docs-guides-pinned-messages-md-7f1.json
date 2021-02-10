@@ -1,0 +1,20 @@
+{
+  "unversionedId": "guides/pinned-messages",
+  "id": "guides/pinned-messages",
+  "isDocsHomePage": false,
+  "title": "Pinned Messages",
+  "source": "@site/docs/guides/pinned-messages.md",
+  "slug": "/guides/pinned-messages",
+  "permalink": "/stream-chat-swift/guides/pinned-messages",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/pinned-messages.md",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Working with User",
+    "permalink": "/stream-chat-swift/guides/working-with-user"
+  },
+  "next": {
+    "title": "Working with Attachments/Files",
+    "permalink": "/stream-chat-swift/guides/working-with-attachments"
+  }
+}

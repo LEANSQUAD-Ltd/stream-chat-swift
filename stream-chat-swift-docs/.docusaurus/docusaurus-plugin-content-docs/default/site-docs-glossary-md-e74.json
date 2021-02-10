@@ -1,0 +1,17 @@
+{
+  "unversionedId": "glossary",
+  "id": "glossary",
+  "isDocsHomePage": false,
+  "title": "Glossary",
+  "description": "A list of names and terms used in the framework and documentation.",
+  "source": "@site/docs/glossary.md",
+  "slug": "/glossary",
+  "permalink": "/stream-chat-swift/glossary",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/glossary.md",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Frequenty Asked Questions",
+    "permalink": "/stream-chat-swift/faq"
+  }
+}

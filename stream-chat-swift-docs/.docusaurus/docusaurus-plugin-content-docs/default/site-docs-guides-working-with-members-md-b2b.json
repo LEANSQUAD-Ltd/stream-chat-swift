@@ -1,0 +1,21 @@
+{
+  "unversionedId": "guides/working-with-members",
+  "id": "guides/working-with-members",
+  "isDocsHomePage": false,
+  "title": "Working with Members",
+  "description": "Users that are in a particular channel are members of this channel. Membership allows handling such things as roles, invitations and bans.",
+  "source": "@site/docs/guides/working-with-members.md",
+  "slug": "/guides/working-with-members",
+  "permalink": "/stream-chat-swift/guides/working-with-members",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/working-with-members.md",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Working with Reactions",
+    "permalink": "/stream-chat-swift/guides/working-with-reactions"
+  },
+  "next": {
+    "title": "Working with Watchers",
+    "permalink": "/stream-chat-swift/guides/working-with-watchers"
+  }
+}

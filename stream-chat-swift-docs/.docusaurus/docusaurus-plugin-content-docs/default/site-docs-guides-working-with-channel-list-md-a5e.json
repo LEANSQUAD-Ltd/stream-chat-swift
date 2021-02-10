@@ -1,0 +1,21 @@
+{
+  "unversionedId": "guides/working-with-channel-list",
+  "id": "guides/working-with-channel-list",
+  "isDocsHomePage": false,
+  "title": "Working with Channel List",
+  "description": "Understanding ChannelListQuery",
+  "source": "@site/docs/guides/working-with-channel-list.md",
+  "slug": "/guides/working-with-channel-list",
+  "permalink": "/stream-chat-swift/guides/working-with-channel-list",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/working-with-channel-list.md",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/stream-chat-swift/guides/getting-started"
+  },
+  "next": {
+    "title": "Working with a Channel",
+    "permalink": "/stream-chat-swift/guides/working-with-a-channel"
+  }
+}

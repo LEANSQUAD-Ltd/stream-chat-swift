@@ -1,0 +1,20 @@
+{
+  "unversionedId": "faq",
+  "id": "faq",
+  "isDocsHomePage": false,
+  "title": "Frequenty Asked Questions",
+  "source": "@site/docs/faq.md",
+  "slug": "/faq",
+  "permalink": "/stream-chat-swift/faq",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/faq.md",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Migrating from 1.x and 2.x",
+    "permalink": "/stream-chat-swift/migrating-from-1.x-and-2.x"
+  },
+  "next": {
+    "title": "Glossary",
+    "permalink": "/stream-chat-swift/glossary"
+  }
+}

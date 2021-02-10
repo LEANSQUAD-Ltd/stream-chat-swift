@@ -1,0 +1,21 @@
+{
+  "unversionedId": "guides/ui-customization",
+  "id": "guides/ui-customization",
+  "isDocsHomePage": false,
+  "title": "Customizing UI Components",
+  "description": "Basic Customization",
+  "source": "@site/docs/guides/ui-customization.md",
+  "slug": "/guides/ui-customization",
+  "permalink": "/stream-chat-swift/guides/ui-customization",
+  "editUrl": "https://github.com/GetStream/stream-chat-swift/edit/main/stream-chat-swift-docs/docs/guides/ui-customization.md",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Connection Status",
+    "permalink": "/stream-chat-swift/guides/connection-status"
+  },
+  "next": {
+    "title": "Moderation",
+    "permalink": "/stream-chat-swift/guides/moderation"
+  }
+}
