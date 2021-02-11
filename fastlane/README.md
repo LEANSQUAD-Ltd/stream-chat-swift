@@ -71,6 +71,11 @@ Runs ui tests in Release config
 fastlane test_release
 ```
 Runs tests in Release config
+### test_release_macos
+```
+fastlane test_release_macos
+```
+Runs tests in Release config on macOS
 ### stress_test
 ```
 fastlane stress_test

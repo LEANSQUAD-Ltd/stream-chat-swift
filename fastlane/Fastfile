@@ -32,7 +32,7 @@ lane :release do |options|
   if git_tag_exists(tag: version_number)
     UI.user_error!("Tag for version #{version_number} already exists!")
   end
-  
+
   changes = touch_changelog(release_version: version_number)
 
   version_bump_podspec(path: "StreamChat.podspec", version_number: version_number)
@@ -48,7 +48,7 @@ lane :release do |options|
   prompt(text: "Will push changes. All looking good?", boolean: true)
                    
   push_to_git_remote(tags: true)
-  
+
   github_release = set_github_release(
                      repository_name: "GetStream/stream-chat-swift",
                      api_token: ENV["GITHUB_TOKEN"],
@@ -56,10 +56,10 @@ lane :release do |options|
                      tag_name: version_number,
                      description: changes
                    )
-  
+
   # First pod release will not have any problems
   pod_push(path: "StreamChat.podspec", allow_warnings: true)
-  
+
   def release_ui
     begin
       pod_push(path: "StreamChatUI.podspec", allow_warnings: true)
@@ -84,7 +84,7 @@ lane :set_SDK_version do |options|
 //
 // Copyright © 2021 Stream.io Inc. All rights reserved.
 //
-// ⚠️  Generated file, please use `fastlane :bump_SDK_version or fastlane release major|minor|patch` lanes 
+// ⚠️  Generated file, please use `fastlane :bump_SDK_version or fastlane release major|minor|patch` lanes
 
 import Foundation
 
@@ -94,7 +94,7 @@ extension SystemEnvironment {
 }
 "
   File.write(pathToVersionFile, versionGeneratedFile)
-end 
+end
 
 desc "If `readonly: true` (by default), installs all Certs and Profiles necessary for development and ad-hoc.\nIf `readonly: false`, recreates all Profiles necessary for development and ad-hoc, updates them locally and remotely."
 lane :match_me do |options|
@@ -139,7 +139,7 @@ lane :distribute_demo_app do
     build_number: ENV["GITHUB_SHA"][0...7],
   )
 
-  match_me  
+  match_me
 
   gym(
     project: "StreamChat.xcodeproj",
@@ -152,9 +152,9 @@ lane :distribute_demo_app do
     include_symbols: true,
     output_directory: "./dist"
   )
-  
+
   message = changelog_from_git_commits(commits_count: 10)
-  
+
   firebase_app_distribution(
       app: "1:674907137625:ios:9e7b1074941f8728d7f348",
       groups: "ios-stream-testers",
@@ -239,12 +239,12 @@ end
 desc "Get next PR number from github to be used in CHANGELOG"
 lane :get_next_issue_number do
   result = github_api(api_token: ENV["GITHUB_TOKEN"], path: "/repos/GetStream/stream-chat-swift/issues")
-  
+
   next_issue_number = result[:json][0]["number"] + 1
   next_issue_link = "[##{next_issue_number}](https://github.com/GetStream/stream-chat-swift/issues/#{next_issue_number})"
-  
+
   clipboard(value: next_issue_link)
-  
+
   UI.success "The next PR / Issue will have number: #{next_issue_number}"
   UI.success "So the next markdown link is: #{next_issue_link}"
   UI.success "Next markdown link is copied to your clipboard! ⬆️"
@@ -324,6 +324,23 @@ lane :test_release do |options|
     configuration: "ReleaseTests",
     clean: true,
     devices: options[:device]
+  )
+end
+
+desc "Runs tests in Release config on macOS"
+lane :test_release_macos do
+
+  setCIEnvironmentVariable("../Tests/StreamChatTests/StreamChatTestPlan.xctestplan")
+
+  match_me
+
+  scan(
+    project: "StreamChat.xcodeproj",
+    scheme: "StreamChat",
+    testplan: "StreamChatTestPlan",
+    configuration: "ReleaseTests",
+    clean: true,
+    destination: 'platform=macOS,arch=x86_64' # will select first from macOS and macOS Catalyst. Let's hope it always will be macOS
   )
 end
 
