@@ -139,6 +139,7 @@ class ChannelControllerMock: ChatChannelController {
     }
     
     init() {
+        print("-1c")
         super.init(channelQuery: .init(channelPayload: .unique), client: .mock)
     }
     
