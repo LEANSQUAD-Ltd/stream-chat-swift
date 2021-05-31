@@ -1,3 +1,0 @@
-
-  - [CleanUpTypingEvent](/CleanUpTypingEvent)
-  - [TypingEvent](/TypingEvent)

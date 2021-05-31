@@ -36,6 +36,12 @@ find "$OUTPUT_DIRECTORY/$TARGET_DIRECTORY" -type f -exec sed -i '' '1d' {} +
 
 if [[ "$TARGET" = "StreamChatUI" ]]; then
     bash Scripts/addImagesToDocumentation.sh "$OUTPUT_DIRECTORY/Sources/StreamChatUI"
+
+    echo "Only target directory:"
+    echo "$TARGET_DIRECTORY"
+    mv -v "$OUTPUT_DIRECTORY/$TARGET_DIRECTORY/"* "$OUTPUT_DIRECTORY/ui-components/"
+    rm -rf "$OUTPUT_DIRECTORY/Sources"
 fi
 
+mv 
 echo "Documentation for $TARGET generated successfully. Please do check stream-chat-swift-docs/docs/Sources folder"
