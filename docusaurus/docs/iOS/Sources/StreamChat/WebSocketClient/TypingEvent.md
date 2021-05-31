@@ -5,7 +5,11 @@ public struct TypingEvent: UserSpecificEvent, ChannelSpecificEvent
 
 ## Inheritance
 
+<<<<<<< HEAD
 `Equatable`, [`UserSpecificEvent`](/UserSpecificEvent), [`ChannelSpecificEvent`](/ChannelSpecificEvent)
+=======
+[`ChannelSpecificEvent`](/ChannelSpecificEvent), `Equatable`, [`UserSpecificEvent`](/UserSpecificEvent)
+>>>>>>> WIP new structure
 
 ## Properties
 
