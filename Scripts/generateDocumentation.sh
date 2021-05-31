@@ -31,6 +31,16 @@ done < /tmp/StreamChat_folder_directories.txt
 # cleanup the duplicate files by comparing what is not in the Sources directory.
 bash Scripts/deleteDuplicates.sh "$OUTPUT_DIRECTORY/$TARGET_DIRECTORY" "$TARGET_DIRECTORY"
 
+# Also delete files which causes docusaurus not compiling.
+pushd $OUTPUT_DIRECTORY
+
+find . -type f -name '_Sidebar.md' -delete
+find . -type f -name 'Home.md' -delete
+find . -type f -name '_Footer.md' -delete
+
+popd
+
+
 # Delete first lines in files
 find "$OUTPUT_DIRECTORY/$TARGET_DIRECTORY" -type f -exec sed -i '' '1d' {} +
 

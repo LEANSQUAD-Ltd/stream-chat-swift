@@ -37,59 +37,39 @@ public init(ext: String)
 
 ## Enumeration Cases
 
-<<<<<<< HEAD
-### `xls`
-=======
-### `mp4`
->>>>>>> WIP new structure
-
-A file attachment type.
-
-``` swift
-case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
-```
-
-<<<<<<< HEAD
-### `pdf`
-=======
-### `xls`
->>>>>>> WIP new structure
-
-A file attachment type.
-
-``` swift
-case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
-```
-
-<<<<<<< HEAD
-### `generic`
-=======
-### `doc`
->>>>>>> WIP new structure
-
-A file attachment type.
-
-``` swift
-case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
-```
-
-<<<<<<< HEAD
-### `doc`
-=======
-### `ppt`
->>>>>>> WIP new structure
-
-A file attachment type.
-
-``` swift
-case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
-```
-
-<<<<<<< HEAD
 ### `zip`
-=======
+
+A file attachment type.
+
+``` swift
+case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
+```
+
+### `doc`
+
+A file attachment type.
+
+``` swift
+case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
+```
+
+### `mp4`
+
+A file attachment type.
+
+``` swift
+case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
+```
+
 ### `mov`
->>>>>>> WIP new structure
+
+A file attachment type.
+
+``` swift
+case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
+```
+
+### `generic`
 
 A file attachment type.
 
@@ -105,11 +85,7 @@ A file attachment type.
 case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
 ```
 
-<<<<<<< HEAD
-### `png`
-=======
 ### `gif`
->>>>>>> WIP new structure
 
 A file attachment type.
 
@@ -117,35 +93,7 @@ A file attachment type.
 case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
 ```
 
-<<<<<<< HEAD
-### `tar`
-=======
-### `pdf`
->>>>>>> WIP new structure
-
-A file attachment type.
-
-``` swift
-case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
-```
-
-<<<<<<< HEAD
-### `mov`
-=======
-### `csv`
->>>>>>> WIP new structure
-
-A file attachment type.
-
-``` swift
-case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
-```
-
-<<<<<<< HEAD
 ### `ppt`
-=======
-### `png`
->>>>>>> WIP new structure
 
 A file attachment type.
 
@@ -153,23 +101,7 @@ A file attachment type.
 case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
 ```
 
-<<<<<<< HEAD
-### `csv`
-=======
-### `jpeg`
->>>>>>> WIP new structure
-
-A file attachment type.
-
-``` swift
-case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
-```
-
-<<<<<<< HEAD
-### `gif`
-=======
 ### `tar`
->>>>>>> WIP new structure
 
 A file attachment type.
 
@@ -177,11 +109,7 @@ A file attachment type.
 case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
 ```
 
-<<<<<<< HEAD
-### `mp4`
-=======
-### `zip`
->>>>>>> WIP new structure
+### `xls`
 
 A file attachment type.
 
@@ -189,11 +117,31 @@ A file attachment type.
 case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
 ```
 
-<<<<<<< HEAD
+### `png`
+
+A file attachment type.
+
+``` swift
+case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
+```
+
+### `pdf`
+
+A file attachment type.
+
+``` swift
+case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
+```
+
 ### `jpeg`
-=======
-### `generic`
->>>>>>> WIP new structure
+
+A file attachment type.
+
+``` swift
+case generic, csv, doc, pdf, ppt, tar, xls, zip, mp3, mp4, mov, jpeg, png, gif
+```
+
+### `csv`
 
 A file attachment type.
 
