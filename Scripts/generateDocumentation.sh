@@ -15,7 +15,7 @@ else
     exit 1
 fi
 
-OUTPUT_DIRECTORY="docusaurus/docs/iOS/"
+OUTPUT_DIRECTORY="docusaurus/docs/iOS"
 
 IGNORED_PATHS='Resources\|__Snapshots__\|Tests\|Generated'
 
