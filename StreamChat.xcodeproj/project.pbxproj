@@ -2413,7 +2413,6 @@
 				7849AF9225F2479A007817D4 /* UITestsEnvironmentSetup.swift */,
 				64B75AFF2631700500A466D1 /* ChatMessage_Tests.swift */,
 				780057F625F634FC00D21095 /* ChatChannel.swift */,
-				E74DB0F32656729A00508D22 /* UISDKdocumentation */,
 			);
 			path = StreamChatUITests;
 			sourceTree = "<group>";
@@ -4010,6 +4009,7 @@
 			children = (
 				79AF43922631692D00E75CDA /* StreamChat.playground */,
 				792E3D6A25C97D920040B0C2 /* Package.swift */,
+				E74DB0F32656729A00508D22 /* UISDKdocumentation */,
 				799C9415247D2F38001F1104 /* Sources */,
 				799C9452247D59B1001F1104 /* Tests */,
 				792A4F23247FF01800EAF71D /* Sample */,
