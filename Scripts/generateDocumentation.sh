@@ -15,7 +15,7 @@ else
     exit 1
 fi
 
-OUTPUT_DIRECTORY="Documentation"
+OUTPUT_DIRECTORY="docusaurus/docs/iOS/"
 
 IGNORED_PATHS='Resources\|__Snapshots__\|Tests\|Generated'
 
@@ -33,13 +33,6 @@ bash Scripts/deleteDuplicates.sh "$OUTPUT_DIRECTORY/$TARGET_DIRECTORY" "$TARGET_
 
 # Delete first lines in files
 find "$OUTPUT_DIRECTORY/$TARGET_DIRECTORY" -type f -exec sed -i '' '1d' {} +
-
-# Sed is no good when it comes with iterating files, the macOS version of sed doesn't make it any easier..
-# so we push to target directory to remove all the
-#pushd "$OUTPUT_DIRECTORY/$TARGET_DIRECTORY"
-#sed -i '' '1d' *.md
-#tail -n +2
-#popd
 
 if [[ "$TARGET" = "StreamChatUI" ]]; then
     bash Scripts/addImagesToDocumentation.sh "$OUTPUT_DIRECTORY/Sources/StreamChatUI"
