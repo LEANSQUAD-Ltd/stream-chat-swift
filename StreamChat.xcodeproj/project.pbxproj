@@ -549,8 +549,8 @@
 		888E8C55252B525300195E03 /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888E8C54252B525300195E03 /* MemberController.swift */; };
 		888E8C59252B56A100195E03 /* MemberController_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888E8C58252B56A100195E03 /* MemberController_Tests.swift */; };
 		889062432548387D00E1898E /* MessageReactionsMiddleware_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889062422548387D00E1898E /* MessageReactionsMiddleware_Tests.swift */; };
-		8897305E265D046D00F83739 /* ChatMessageLayoutOptionsResolver_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8897305D265D046D00F83739 /* ChatMessageLayoutOptionsResolver_Tests.swift */; };
 		8893FEF9265F890700DD62BE /* ChatMessageBubbleView_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893FEF8265F890700DD62BE /* ChatMessageBubbleView_Tests.swift */; };
+		8897305E265D046D00F83739 /* ChatMessageLayoutOptionsResolver_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8897305D265D046D00F83739 /* ChatMessageLayoutOptionsResolver_Tests.swift */; };
 		8899BC3F2542FFA1003CB98B /* MessageReactionPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899BC3E2542FFA1003CB98B /* MessageReactionPayload.swift */; };
 		8899BC47254305F8003CB98B /* MessageReactionRequestPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899BC46254305F8003CB98B /* MessageReactionRequestPayload.swift */; };
 		8899BC4D25430E40003CB98B /* MessageReactionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899BC4C25430E40003CB98B /* MessageReactionDTO.swift */; };
@@ -1768,8 +1768,8 @@
 		888E8C54252B525300195E03 /* MemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberController.swift; sourceTree = "<group>"; };
 		888E8C58252B56A100195E03 /* MemberController_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberController_Tests.swift; sourceTree = "<group>"; };
 		889062422548387D00E1898E /* MessageReactionsMiddleware_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageReactionsMiddleware_Tests.swift; sourceTree = "<group>"; };
-		8897305D265D046D00F83739 /* ChatMessageLayoutOptionsResolver_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageLayoutOptionsResolver_Tests.swift; sourceTree = "<group>"; };
 		8893FEF8265F890700DD62BE /* ChatMessageBubbleView_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageBubbleView_Tests.swift; sourceTree = "<group>"; };
+		8897305D265D046D00F83739 /* ChatMessageLayoutOptionsResolver_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageLayoutOptionsResolver_Tests.swift; sourceTree = "<group>"; };
 		8899BC3E2542FFA1003CB98B /* MessageReactionPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageReactionPayload.swift; sourceTree = "<group>"; };
 		8899BC46254305F8003CB98B /* MessageReactionRequestPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageReactionRequestPayload.swift; sourceTree = "<group>"; };
 		8899BC4C25430E40003CB98B /* MessageReactionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageReactionDTO.swift; sourceTree = "<group>"; };
@@ -6680,6 +6680,12 @@
 		793060F725778897005CF846 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7,
+					armv7s,
+					x86_64,
+				);
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -6700,6 +6706,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.getstream.StreamChatTestTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6709,6 +6716,12 @@
 		793060F825778897005CF846 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7,
+					armv7s,
+					x86_64,
+				);
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -6729,6 +6742,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.getstream.StreamChatTestTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -6737,6 +6751,12 @@
 		793060F925778897005CF846 /* ReleaseTests */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7,
+					armv7s,
+					x86_64,
+				);
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -6757,6 +6777,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.getstream.StreamChatTestTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -6917,8 +6938,8 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRINCIPAL_CLASS = "$(PRODUCT_NAME).TestsEnvironmentSetup";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRINCIPAL_CLASS = "$(PRODUCT_NAME).TestsEnvironmentSetup";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.StreamChatClientTests-v3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
@@ -6947,8 +6968,8 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRINCIPAL_CLASS = "$(PRODUCT_NAME).TestsEnvironmentSetup";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRINCIPAL_CLASS = "$(PRODUCT_NAME).TestsEnvironmentSetup";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.StreamChatClientTests-v3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
@@ -7324,8 +7345,8 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRINCIPAL_CLASS = "$(PRODUCT_NAME).TestsEnvironmentSetup";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRINCIPAL_CLASS = "$(PRODUCT_NAME).TestsEnvironmentSetup";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.StreamChatClientTests-v3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";

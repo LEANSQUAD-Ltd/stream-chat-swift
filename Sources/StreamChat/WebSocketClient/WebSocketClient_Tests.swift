@@ -619,13 +619,12 @@ class WebSocketClient_Tests: StressTestCase {
     func test_backgroundTaskIsCancelled_whenExpirationHandlerIsCalled() {
         // Simulate connection and start a background task
         test_connectionFlow()
-        let task = UIBackgroundTaskIdentifier(rawValue: .random(in: 1...100))
-        backgroundTaskScheduler.beginBackgroundTask = task
-        NotificationCenter.default.post(name: UIApplication.didEnterBackgroundNotification, object: nil)
+        backgroundTaskScheduler.beginBackgroundTask_returns = true
+        backgroundTaskScheduler.startListeningForAppStateUpdates_onBackground?()
         
         // Wait for `beginBackgroundTask` being called since it can be done asynchronously
         AssertAsync.willBeTrue(backgroundTaskScheduler.beginBackgroundTask_called)
-        assert(backgroundTaskScheduler.endBackgroundTask_called == nil)
+        assert(backgroundTaskScheduler.endBackgroundTask_called == false)
         
         // We don't simulate explicit cancelation here
         // since we expect expiration handler to call disconnect
@@ -634,7 +633,7 @@ class WebSocketClient_Tests: StressTestCase {
         backgroundTaskScheduler.beginBackgroundTask_expirationHandler!()
         
         // Check the background task is terminated
-        AssertAsync.willBeEqual(backgroundTaskScheduler.endBackgroundTask_called, task)
+        AssertAsync.willBeEqual(backgroundTaskScheduler.endBackgroundTask_called, true)
     }
 }
 

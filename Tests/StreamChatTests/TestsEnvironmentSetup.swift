@@ -16,18 +16,20 @@ final class TestsEnvironmentSetup: NSObject {
             // Before running the test suite cleanup the `NSTemporaryDirectory()` directory
             let fileManager = FileManager.default
             let tempDirectoryURL = URL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true)
-            
+
             let tempFileURLs = try fileManager.contentsOfDirectory(
                 at: tempDirectoryURL,
                 includingPropertiesForKeys: nil,
                 options: .skipsHiddenFiles
             )
-            
+
             try tempFileURLs.forEach {
                 try fileManager.removeItem(at: $0)
             }
         } catch {
-            fatalError("Failed to clean up before tests: \(error)")
+            if (error as NSError).code != 513 {
+                fatalError("Failed to clean up before tests: \(error)")
+            }
         }
     }
 }
