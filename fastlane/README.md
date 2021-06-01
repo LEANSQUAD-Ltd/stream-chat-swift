@@ -76,11 +76,16 @@ Runs tests in Release config
 fastlane test_release_macos
 ```
 Runs tests in Release config on macOS
+### test_debug_macos
+```
+fastlane test_debug_macos
+```
+Runs tests in Debug config on macOS
 ### stress_test
 ```
 fastlane stress_test
 ```
-Runs stress tests for in Debug config
+Runs stress tests for
 ### stress_test_release
 ```
 fastlane stress_test_release
