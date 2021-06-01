@@ -31,9 +31,11 @@ done < /tmp/StreamChat_folder_directories.txt
 # cleanup the duplicate files by comparing what is not in the Sources directory.
 bash Scripts/deleteDuplicates.sh "$OUTPUT_DIRECTORY/$TARGET_DIRECTORY" "$TARGET_DIRECTORY"
 
-# Also delete files which causes docusaurus not compiling.
+
+# Like ViewController.push, it can pop as well :) 
 pushd $OUTPUT_DIRECTORY
 
+# Also delete emissions which cause docusaurus not compiling., we probably want to rename Home.md to name it contains it in order to create brief overview of the component.
 find . -type f -name '_Sidebar.md' -delete
 find . -type f -name 'Home.md' -delete
 find . -type f -name '_Footer.md' -delete
@@ -45,13 +47,12 @@ popd
 find "$OUTPUT_DIRECTORY/$TARGET_DIRECTORY" -type f -exec sed -i '' '1d' {} +
 
 if [[ "$TARGET" = "StreamChatUI" ]]; then
-    bash Scripts/addImagesToDocumentation.sh "$OUTPUT_DIRECTORY/Sources/StreamChatUI"
+    bash Scripts/addImagesToDocumentation.sh "$OUTPUT_DIRECTORY/Sources/StreamChatUI" && /bin/mv -v "$OUTPUT_DIRECTORY/$TARGET_DIRECTORY/"* "$OUTPUT_DIRECTORY/ui-components/"
 
-    mv -v "$OUTPUT_DIRECTORY/$TARGET_DIRECTORY/"* "$OUTPUT_DIRECTORY/ui-components/"
     rm -rf "$OUTPUT_DIRECTORY/Sources"
 else 
     # Right now, we want to add documentation only for controllers.
-    mv -v "$OUTPUT_DIRECTORY/$TARGET_DIRECTORY/Controllers/"* "$OUTPUT_DIRECTORY/controllers/"
+    /bin/mv -v "$OUTPUT_DIRECTORY/$TARGET_DIRECTORY/Controllers/"* "$OUTPUT_DIRECTORY/controllers/"
 fi
 
 echo "Documentation for $TARGET generated successfully. Please do check $OUTPUT_DIRECTORY ui-components and controllers folder"

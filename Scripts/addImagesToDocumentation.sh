@@ -6,7 +6,7 @@ cd "$scriptDir/../"
 
 DOCUMENTATION_FOLDER=$1
 PATH_TO_SNAPSHOTS="UISDKdocumentation/__Snapshots__"
-PATH_TO_ASSETS="docusaurus/docs/iOS/assets/"
+PATH_TO_ASSETS="assets/"
 
 for UI_SNAPSHOT in ${PATH_TO_SNAPSHOTS}/*;do
 
@@ -30,5 +30,10 @@ for UI_SNAPSHOT in ${PATH_TO_SNAPSHOTS}/*;do
     echo "Adding snapshot of $COMPONENT_NAME to documentation..."
     
     SNAPSHOT_ANNOTATION_TEXT="![$COMPONENT_NAME](/$PATH_TO_ASSETS/$FINAL_SNAPSHOT)"
+    echo $SNAPSHOT_ANNOTATION_TEXT
+    echo $DOCUMENTATION_FILE
     echo -e "$SNAPSHOT_ANNOTATION_TEXT\n$(cat $DOCUMENTATION_FILE)" > $DOCUMENTATION_FILE
+    echo "Result code for adding snapshot is $?"
+
+
 done

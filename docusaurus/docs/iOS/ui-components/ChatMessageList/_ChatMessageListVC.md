@@ -19,7 +19,7 @@ open class _ChatMessageListVC<ExtraData: ExtraDataTypes>:
 
 ## Inheritance
 
-[`GalleryContentViewDelegate`](/GalleryContentViewDelegate), [`ChatMessageContentViewDelegate`](/ChatMessageContentViewDelegate), [`ChatMessageListCollectionViewDataSource`](/ChatMessageListCollectionViewDataSource), `ComposerVCDelegate`, [`FileActionContentViewDelegate`](/FileActionContentViewDelegate), [`GiphyActionContentViewDelegate`](/GiphyActionContentViewDelegate), [`LinkPreviewViewDelegate`](/LinkPreviewViewDelegate), `ThemeProvider`, `UICollectionViewDelegate`, `_ChatChannelControllerDelegate`, `_ChatMessageActionsVCDelegate`, `_ViewController`
+[`FileActionContentViewDelegate`](/FileActionContentViewDelegate), [`GiphyActionContentViewDelegate`](/GiphyActionContentViewDelegate), [`LinkPreviewViewDelegate`](/LinkPreviewViewDelegate), [`ChatMessageContentViewDelegate`](/ChatMessageContentViewDelegate), [`ChatMessageListCollectionViewDataSource`](/ChatMessageListCollectionViewDataSource), `ComposerVCDelegate`, [`GalleryContentViewDelegate`](/GalleryContentViewDelegate), `ThemeProvider`, `UICollectionViewDelegate`, `_ChatChannelControllerDelegate`, `_ChatMessageActionsVCDelegate`, `_ViewController`
 
 ## Properties
 
