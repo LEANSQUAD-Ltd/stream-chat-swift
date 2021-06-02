@@ -29,7 +29,8 @@ open class _ChatMessageListVC<ExtraData: ExtraDataTypes>:
     open lazy var keyboardObserver = ChatMessageListKeyboardObserver(
         containerView: view,
         scrollView: collectionView,
-        composerBottomConstraint: messageComposerBottomConstraint
+        composerBottomConstraint: messageComposerBottomConstraint,
+        viewController: self
     )
 
     /// User search controller passed directly to the composer
@@ -126,8 +127,8 @@ open class _ChatMessageListVC<ExtraData: ExtraDataTypes>:
         addChildViewController(messageComposerVC, targetView: view)
 
         messageComposerVC.view.topAnchor.pin(equalTo: collectionView.bottomAnchor).isActive = true
-        messageComposerVC.view.leadingAnchor.pin(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        messageComposerVC.view.trailingAnchor.pin(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        messageComposerVC.view.leadingAnchor.pin(equalTo: view.leadingAnchor).isActive = true
+        messageComposerVC.view.trailingAnchor.pin(equalTo: view.trailingAnchor).isActive = true
         messageComposerBottomConstraint = messageComposerVC.view.bottomAnchor.pin(equalTo: view.bottomAnchor)
         messageComposerBottomConstraint?.isActive = true
         
