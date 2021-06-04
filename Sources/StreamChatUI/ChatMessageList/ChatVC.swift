@@ -33,6 +33,7 @@ open class _ChatVC<ExtraData: ExtraDataTypes>: _ViewController,
     private var navbarListener: ChatChannelNavigationBarListener<ExtraData>?
     
     private var messageComposerBottomConstraint: NSLayoutConstraint?
+    open var enableKeyboardObserver = false
     private lazy var keyboardObserver = ChatMessageListKeyboardObserver(
         containerView: view,
         scrollView: messageList.collectionView,
@@ -49,8 +50,10 @@ open class _ChatVC<ExtraData: ExtraDataTypes>: _ViewController,
     
     override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        keyboardObserver.register()
+
+        if enableKeyboardObserver {
+            keyboardObserver.register()
+        }
         
         // This is just a temporary place to do this. When it will be possible to open a channel on any
         // arbitrary message, we should make the channel read only when it scrolls to the very last message.
@@ -68,8 +71,10 @@ open class _ChatVC<ExtraData: ExtraDataTypes>: _ViewController,
     override open func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         resignFirstResponder()
-        
-        keyboardObserver.unregister()
+
+        if enableKeyboardObserver {
+            keyboardObserver.unregister()
+        }
     }
 
     override internal func setUp() {
