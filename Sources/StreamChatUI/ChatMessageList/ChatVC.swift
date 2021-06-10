@@ -33,7 +33,7 @@ open class _ChatVC<ExtraData: ExtraDataTypes>: _ViewController,
     private var navbarListener: ChatChannelNavigationBarListener<ExtraData>?
     
     private var messageComposerBottomConstraint: NSLayoutConstraint?
-    open var enableKeyboardObserver = false
+    open var enableKeyboardObserver = true
     private lazy var keyboardObserver = ChatMessageListKeyboardObserver(
         containerView: view,
         scrollView: messageList.collectionView,
