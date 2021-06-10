@@ -125,7 +125,7 @@ internal class _ChatMessageComposerSuggestionsViewController<ExtraData: ExtraDat
                     guard let self = self, let changedFrame = change.newValue else { return }
 
                     let newFrame = bottomAnchoredView.convert(changedFrame, to: nil)
-                    self.view.frame.origin.y = newFrame.minY - self.view.frame.height
+                    self.view.frame.origin.y = newFrame.minY - self.view.frame.height - bottomAnchoredView.frame.height
                 }
             }
         )
