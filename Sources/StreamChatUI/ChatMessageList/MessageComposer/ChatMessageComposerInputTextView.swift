@@ -12,10 +12,6 @@ internal class _ChatMessageComposerInputTextView<ExtraData: ExtraDataTypes>: UIT
     Customizable,
     UIConfigProvider
 {
-    // MARK: - Properties
-            
-    lazy var textViewHeightConstraint = heightAnchor.pin(equalToConstant: .zero)
-    
     // MARK: - Subviews
     
     internal lazy var placeholderLabel: UILabel = UILabel()
@@ -64,7 +60,7 @@ internal class _ChatMessageComposerInputTextView<ExtraData: ExtraDataTypes>: UIT
     internal func setUp() {
         NotificationCenter.default.addObserver(
             self,
-            selector: #selector(textDidChange),
+            selector: #selector(handleTextChange),
             name: UITextView.textDidChangeNotification,
             object: nil
         )
@@ -85,20 +81,16 @@ internal class _ChatMessageComposerInputTextView<ExtraData: ExtraDataTypes>: UIT
         placeholderLabel.pin(anchors: [.centerY], to: self)
         
         isScrollEnabled = false
-        
-        textViewHeightConstraint.isActive = true
     }
     
     internal func updateContent() {}
     
     func textDidChangeProgrammatically() {
         delegate?.textViewDidChange?(self)
-        textDidChange()
+        handleTextChange()
     }
         
-    @objc func textDidChange() {
+    @objc func handleTextChange() {
         placeholderLabel.isHidden = !text.isEmpty
-        textViewHeightConstraint.constant = calculatedTextHeight() + textContainerInset.bottom + textContainerInset.top
-        layoutIfNeeded()
     }
 }
